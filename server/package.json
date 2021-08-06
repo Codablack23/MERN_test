@@ -1,0 +1,26 @@
+{
+    "name": "server",
+    "version": "1.0.0",
+    "description": "my test for perfect trade",
+    "main": "server.js",
+    "scripts": {
+        "server": "nodemon server.js",
+        "client": "cd ../client && npm start",
+        "devStart": "concurrently \"npm run server\" \"npm run client\""
+    },
+    "author": "codablack",
+    "license": "ISC",
+    "dependencies": {
+        "bcrypt": "^5.0.1",
+        "body-parser": "^1.19.0",
+        "concurrently": "^6.2.0",
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "express-session": "^1.17.2",
+        "sequelize": "^6.6.2",
+        "sqlite3": "^5.0.2"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.7"
+    }
+}
